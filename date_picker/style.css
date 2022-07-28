@@ -1,0 +1,142 @@
+*{
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+body {
+    background-color: #d6e1e5;
+}
+:root
+{
+--calendar: 18;
+}
+li
+{
+    list-style: none;
+}
+button
+{
+    border: none;
+    background-color:transparent;
+    cursor:pointer;
+}
+  .container
+{
+    width: 1020px;
+    margin: auto;
+}
+
+.title
+{
+    color: #db5b33;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.date-bar
+{
+    display: block;
+    margin: 80px auto;
+    width: 120px;
+    height: 20px;
+    padding: 3px 3px 3px 8px;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: #fff;
+    color:solid rgb(155, 155, 155);;
+    border: 1px solid rgb(155, 155, 155);
+}
+
+.calendar
+{
+    display: none;
+    margin: -30px auto;   
+    width:calc(var(--calendar) * 1vw);
+    min-width: 300px;
+    border-radius: 20px;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.open
+{
+    display: block;
+}
+.calendar-nav
+{
+    padding: 5%;
+    background-color: #44c379;
+    color: #fff;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.calendar-nav-middle
+{
+    width:60%;
+    text-align: center;
+}
+
+
+.btn
+{
+    width: 20%;
+    color: #fff;
+}
+
+.calendar-grid
+{
+    padding: 3%;
+    text-align: center;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;    
+}
+
+.calendar-grid .week-zone
+{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-column: 1/8;
+}
+.gray
+{
+    color: rgba(100, 98, 98, 0.192);
+}
+
+.red
+{
+    color: red;
+}
+.week-zone div
+{
+    padding: 10%;
+}
+
+.day-zone button
+{
+    padding: 30%;
+}
+.calendar-grid .day-zone
+{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-column: 1/8;
+}
+
+.active
+{
+    border-radius: 100%;
+    background-color: #44c379;
+}
+
+.today
+{
+    border: 1px solid #44c379;
+    border-radius: 100%;
+}
+
+.day:hover
+{
+    border-radius: 100%;
+    background-color: #44c379;}
